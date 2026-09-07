@@ -322,7 +322,7 @@ a { color: inherit; }
 .bio-photo img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: top center;
 }
@@ -403,7 +403,7 @@ a { color: inherit; }
 .photo-item img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
   filter: grayscale(1);
 }
