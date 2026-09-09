@@ -7,7 +7,17 @@
    sert de fil conducteur, jamais décoratif.
    ========================================================================== */
 
+@font-face {
+  font-family: "Rocket Wildness";
+  src: url("../fonts/RocketWildness.woff2") format("woff2"),
+       url("../fonts/RocketWildness.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
+  --font-wordmark: "Rocket Wildness", var(--font-display);
   --bg-dark: #0b0d10;
   --bg-dark-2: #14181c;
   --bg-light: #e4e2dc;
@@ -90,11 +100,14 @@ a { color: inherit; }
   height: 64px;
 }
 .wordmark {
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--ink-on-dark);
+  display: flex;
+  align-items: center;
   text-decoration: none;
+}
+.wordmark img {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 .main-nav {
   display: flex;
@@ -149,13 +162,21 @@ a { color: inherit; }
 }
 .hero-kicker {
   font-size: 14px;
+  font-weight: 600;
   letter-spacing: 0.06em;
   color: var(--accent-bright);
   margin: 0 0 8px;
 }
 .hero-title {
-  font-size: clamp(72px, 15vw, 168px);
+  font-family: var(--font-wordmark);
+  font-weight: 900;
+  letter-spacing: 0.01em;
   margin: 0 0 20px;
+}
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: clamp(72px, 9vw, 168px);
+  }
 }
 .hero-line {
   max-width: 46ch;
@@ -345,7 +366,7 @@ a { color: inherit; }
 
 /* ---------- Social icons ---------- */
 .social-list a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: flex-end;
   gap: 10px;
@@ -362,6 +383,8 @@ a { color: inherit; }
 .embed-frame {
   border: 1px solid var(--line-on-dark);
   overflow: hidden;
+  max-width: 700px;
+  max-height: 300px;
 }
 .embed-frame iframe { display: block; width: 100%; }
 .embed-frame-16-9 { position: relative; padding-top: 56.25%; }
@@ -449,9 +472,8 @@ a { color: inherit; }
   text-align: right;
 }
 @media (max-width: 720px) { .social-list { text-align: left; } }
-.social-list li { border-bottom: 1px solid var(--line-on-dark); }
 .social-list a {
-  display: block;
+  display: inline-flex;
   padding: 12px 0;
   text-decoration: none;
   font-size: 16px;
