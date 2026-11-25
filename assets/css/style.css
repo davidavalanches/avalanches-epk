@@ -261,6 +261,39 @@ a { color: inherit; }
   color: var(--ink-soft);
 }
 
+/* Press quotes */
+.press-quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 36px 48px;
+  margin-bottom: 64px;
+}
+.press-quotes .pull-quote { margin: 0; }
+.press-quotes .pull-quote p { margin: 0; }
+.pull-quote cite a { color: inherit; }
+.pull-quote cite a:hover { color: var(--accent); }
+
+/* Hero quote */
+.hero-quote {
+  max-width: 46ch;
+  margin: -12px 0 32px;
+  padding-left: 18px;
+  border-left: 2px solid var(--accent-bright);
+}
+.hero-quote p {
+  margin: 0;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--ink-on-dark);
+}
+.hero-quote cite {
+  display: block;
+  margin-top: 6px;
+  font-style: normal;
+  font-size: 13px;
+  color: var(--ink-on-dark-soft);
+}
+
 .fact-list {
   list-style: none;
   margin: 0;
