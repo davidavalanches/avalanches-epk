@@ -4,21 +4,20 @@ Site statique (HTML/CSS/JS, sans dépendances) prêt à héberger sur GitHub Pag
 
 ## État du contenu
 
-Déjà en place, avec vos éléments réels :
-- Bio (courte + longue), membres, genre
-- Bandcamp : Megalithe (2023) et Fragile (2026), lecteurs intégrés avec tracklists
-- YouTube : clip Megalithe + vidéo live, + un extrait animé (gif) en 3e carte
-- Photos : 3 photos presse + bannière cinématique en haut de la section Écoute
-- Réseaux : icônes Bandcamp / YouTube / Instagram / Facebook
-- Téléchargement "Photos HD" (zip réel, 5 fichiers haute résolution)
+En ligne sur https://davidavalanches.github.io/avalanches-epk/ (site en anglais).
 
-Encore en placeholder (chercher `<!-- TODO ... -->` dans `index.html`) :
-- [ ] **Liens réels** YouTube / Instagram / Facebook (actuellement `#`)
-- [ ] **E-mail de contact/booking** (actuellement une adresse d'exemple)
-- [ ] **Lieu et date** du live (clip + extrait live)
-- [ ] **Dossier de presse** et **fiche technique** en PDF (pas encore fournis — la section
-      Presse ne propose pour l'instant que le zip photos HD)
-- [ ] **Prochaine date** et **contact booking** dans la section Presse
+- Bio, membres, genre, faits clés
+- Bandcamp : Fragile (janvier 2026) et Megalithe (juin 2023), lecteurs intégrés
+- YouTube : clip Megalithe + extrait live au Ferrailleur (16/03/2025)
+- Photos : 6 photos presse (versions web 1200 px générées depuis le zip HD) + zip HD
+- Presse : one-sheet, bio (FR), communiqué Fragile (FR), fiche technique, photos HD
+- Prochaines dates, contact booking, liens réseaux
+- Aperçu de partage (Open Graph) : `assets/img/og-image.jpg` (1200×630)
+
+À tenir à jour :
+- [ ] **Prochaines dates** (section Press) : retirer les dates passées, ajouter les nouvelles
+- [ ] Si une photo du zip HD change, régénérer sa version web :
+      `convert photo-0X.jpg -auto-orient -resize 1200x -strip -quality 80 -interlace Plane assets/img/photo-0X.jpg`
 
 ## Déployer sur GitHub Pages
 
@@ -55,18 +54,23 @@ index.html
 assets/
   css/style.css
   js/main.js
+  fonts/                    → RocketWildness
   img/
-    hero-planet.png        → illustration "planète" (fond du hero)
+    avalanches-logo.png     → logo (en-tête)
+    hero-planet.png         → illustration "planète" (fond du hero)
     bio-portrait.jpg        → portrait du groupe (section Bio)
-    cinematic-strip.jpg     → bannière entre Bio et Écoute
-    fragile-cover.jpg       → pochette Fragile
-    megalithe-cover.gif     → extrait animé Megalithe
-    live-teaser.gif         → extrait animé live
-    photo-01.jpg / 02 / 03  → photos presse
+    megalithe-cover.gif     → bannière animée entre Bio et Music
+    fragile-cover.jpg / megalithe-cover.jpg → pochettes
+    photo-01.jpg … 06       → photos presse (web, 1200 px)
+    og-image.jpg            → image d'aperçu pour les partages
+    live-teaser.gif         → (non utilisé actuellement)
     icons/                  → logos réseaux sociaux
   press/
-    avalanches-photos-hd.zip → photos + pochette en haute résolution
-    (à ajouter : dossier de presse et fiche technique en PDF)
+    avalanches-onesheet.pdf
+    avalanches-bio-fr.pdf
+    avalanches-communique-fragile-fr.pdf
+    avalanches-fiche-technique.pdf
+    avalanches-photos-hd.zip
 ```
 
 ## Notes de design
