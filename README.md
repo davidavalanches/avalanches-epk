@@ -15,7 +15,7 @@ En ligne sur https://davidavalanches.github.io/avalanches-epk/ (site en anglais)
 - Aperçu de partage (Open Graph) : `assets/img/og-image.jpg` (1200×630)
 
 À tenir à jour :
-- [ ] **Prochaines dates** (section Press) : retirer les dates passées, ajouter les nouvelles
+- [ ] **Prochaines dates** (section Press) : ajouter les nouvelles ; une date passée prend `class="past"` (barrée et grisée)
 - [ ] Si une photo du zip HD change, régénérer sa version web :
       `convert photo-0X.jpg -auto-orient -resize 1200x -strip -quality 80 -interlace Plane assets/img/photo-0X.jpg`
 

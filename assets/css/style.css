@@ -278,6 +278,10 @@ a { color: inherit; }
 .fact-list span {
   color: var(--ink-soft);
 }
+.fact-list li.past {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
 
 .press-list {
   list-style: none;
