@@ -383,6 +383,17 @@ a { color: inherit; }
   border-radius: 50%;
 }
 
+/* ---------- Streaming links ---------- */
+.stream-list {
+  list-style: none;
+  margin: 0 0 48px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.stream-list .btn { padding: 10px 18px; }
+
 /* ---------- Embeds ---------- */
 .embed-frame {
   border: 1px solid var(--line-on-dark);

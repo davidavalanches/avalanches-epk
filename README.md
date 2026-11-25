@@ -7,7 +7,7 @@ Site statique (HTML/CSS/JS, sans dépendances) prêt à héberger sur GitHub Pag
 En ligne sur https://davidavalanches.github.io/avalanches-epk/ (site en anglais).
 
 - Bio, membres, genre, faits clés
-- Bandcamp : Fragile (janvier 2026) et Megalithe (juin 2023), lecteurs intégrés
+- Music : liens Spotify / Apple Music / Deezer / Qobuz / YouTube Music / Bandcamp + lecteurs Bandcamp (Fragile, janvier 2026 ; Megalithe, juin 2023)
 - YouTube : clip Megalithe + extrait live au Ferrailleur (16/03/2025)
 - Photos : 6 photos presse (versions web 1200 px générées depuis le zip HD) + zip HD
 - Presse : one-sheet, bio (FR), communiqué Fragile (FR), fiche technique, photos HD
