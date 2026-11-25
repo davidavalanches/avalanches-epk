@@ -19,6 +19,21 @@ En ligne sur https://davidavalanches.github.io/avalanches-epk/ (site en anglais)
 - [ ] Si une photo du zip HD change, régénérer sa version web :
       `convert photo-0X.jpg -auto-orient -resize 1200x -strip -quality 80 -interlace Plane assets/img/photo-0X.jpg`
 
+## Langues (EN / FR)
+
+Le site existe en anglais et en français, avec un sélecteur EN / FR dans le header.
+
+- **Langue par défaut** : celle du navigateur (français → FR, sinon EN). Le choix fait avec le
+  sélecteur est mémorisé pour les visites suivantes.
+- **Lien direct** : `?lang=fr` ou `?lang=en` à la fin de l'adresse force la langue, pratique pour
+  envoyer le lien à un programmateur, ex. `https://davidavalanches.github.io/avalanches-epk/?lang=fr`.
+- **Modifier un texte** : la version anglaise est écrite dans `index.html` ; la version française
+  est dans le dictionnaire `FR` en haut de `assets/js/main.js`, sous la même clé que l'attribut
+  `data-i18n="…"` de l'élément. Un texte sans `data-i18n` (noms, dates, liens) est identique dans
+  les deux langues.
+- **Bio courte** : la version de la langue affichée passe en premier, l'autre reste dans le bloc
+  dépliable.
+
 ## Déployer sur GitHub Pages
 
 1. Créer un dépôt GitHub (public, ou privé avec un plan qui autorise Pages), par exemple `avalanches-epk`.
