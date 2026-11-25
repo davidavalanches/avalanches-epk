@@ -295,6 +295,22 @@ a { color: inherit; }
   .quote-thumb { width: 72px; }
 }
 
+/* Short bio (Press section) */
+.short-bio {
+  margin: 28px 0 8px;
+  padding: 22px 24px;
+  border: 1px solid var(--line-on-light);
+  background: rgba(255, 255, 255, 0.35);
+}
+.short-bio h3 { margin: 0 0 12px; }
+.short-bio p { font-size: 16px; }
+.short-bio-fr summary {
+  cursor: pointer;
+  font-size: 15px;
+  color: var(--accent);
+  margin-top: 8px;
+}
+
 /* Hero quote */
 .hero-quote {
   max-width: 46ch;
