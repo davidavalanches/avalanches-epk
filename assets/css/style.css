@@ -273,6 +273,28 @@ a { color: inherit; }
 .pull-quote cite a { color: inherit; }
 .pull-quote cite a:hover { color: var(--accent); }
 
+/* Press quote thumbnails (portrait captures of the articles) */
+.press-quotes:has(.has-thumb) { grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); }
+.pull-quote.has-thumb {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.quote-thumb {
+  display: block;
+  width: 84px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  margin-top: 4px;
+  border: 1px solid var(--line-on-light);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 480px) {
+  .press-quotes:has(.has-thumb) { grid-template-columns: 1fr; }
+  .quote-thumb { width: 72px; }
+}
+
 /* Hero quote */
 .hero-quote {
   max-width: 46ch;
