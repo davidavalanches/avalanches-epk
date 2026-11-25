@@ -25,6 +25,16 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Sur iPhone / iPad, Safari bloque les cookies du lecteur Bandcamp intégré
+    // ("cookies désactivés") : on affiche un bouton vers Bandcamp à la place.
+    (function () {
+      var ua = navigator.userAgent;
+      var ios = /iPad|iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      if (ios) document.documentElement.classList.add('is-ios');
+    })();
+  </script>
 </head>
 
 <body>
@@ -162,12 +172,14 @@
             <img class="release-cover" src="assets/img/fragile-cover.jpg" alt="Fragile album cover" data-i18n-attr="alt:music.fragile.alt">
             <h3 class="release-title">Fragile <span data-i18n="music.fragile.date">— mini-album, January 2026</span></h3>
           </div>
-          <div class="embed-frame">
+          <div class="embed-frame embed-bandcamp">
             <iframe style="border: 0; width: 100%; height: 470px;"
               src="https://bandcamp.com/EmbeddedPlayer/album=1700074367/size=large/bgcol=161a1d/linkcol=9fd1e8/tracklist=true/artwork=small/transparent=true/"
               seamless title="Bandcamp player — Fragile" data-i18n-attr="title:music.fragile.player">
             </iframe>
           </div>
+          <a class="btn btn-ghost bandcamp-link" href="https://avalanches-theband.bandcamp.com/album/fragile"
+            target="_blank" rel="noopener" data-i18n="music.fragile.open">Listen to <em>Fragile</em> on Bandcamp</a>
         </div>
 
         <div class="release-block">
@@ -175,12 +187,14 @@
             <img class="release-cover" src="assets/img/megalithe-cover.jpg" alt="Megalithe EP cover" data-i18n-attr="alt:music.megalithe.alt">
             <h3 class="release-title">Megalithe <span data-i18n="music.megalithe.date">— EP, June 2023</span></h3>
           </div>
-          <div class="embed-frame">
+          <div class="embed-frame embed-bandcamp">
             <iframe style="border: 0; width: 100%; height: 470px;"
               src="https://bandcamp.com/EmbeddedPlayer/album=1980162097/size=large/bgcol=161a1d/linkcol=9fd1e8/tracklist=true/artwork=small/transparent=true/"
               seamless title="Bandcamp player — Megalithe" data-i18n-attr="title:music.megalithe.player">
             </iframe>
           </div>
+          <a class="btn btn-ghost bandcamp-link" href="https://avalanches-theband.bandcamp.com/album/megalithe-2"
+            target="_blank" rel="noopener" data-i18n="music.megalithe.open">Listen to <em>Megalithe</em> on Bandcamp</a>
         </div>
 
         <p class="embed-fallback" data-i18n="music.fallback">

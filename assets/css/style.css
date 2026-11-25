@@ -562,6 +562,12 @@ a { color: inherit; }
 .embed-frame-16-9 img {
   position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover;
 }
+/* Lien Bandcamp affiché à la place du lecteur sur iPhone / iPad */
+.bandcamp-link { display: none; }
+.is-ios .embed-bandcamp { display: none; }
+.is-ios .bandcamp-link { display: inline-block; }
+.is-ios .embed-fallback { display: none; }
+
 .embed-fallback {
   margin-top: 16px;
   font-size: 14px;

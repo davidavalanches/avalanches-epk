@@ -53,6 +53,8 @@ const FR = {
   'music.megalithe.alt': 'Pochette de l’EP Megalithe',
   'music.megalithe.date': '— EP, juin 2023',
   'music.megalithe.player': 'Lecteur Bandcamp — Megalithe',
+  'music.fragile.open': 'Écouter <em>Fragile</em> sur Bandcamp',
+  'music.megalithe.open': 'Écouter <em>Megalithe</em> sur Bandcamp',
   'music.fallback': 'Le lecteur ne s’affiche pas&nbsp;? Écoutez directement sur <a href="https://avalanches-theband.bandcamp.com" target="_blank" rel="noopener">Bandcamp</a>.',
 
   'videos.title': 'Vidéos',
